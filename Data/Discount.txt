@@ -1,0 +1,6 @@
+Student|0.7
+Youth|0.5
+Senior|0.7
+Disable|0.5
+Special|0.8
+First-Time Customer|0.9
