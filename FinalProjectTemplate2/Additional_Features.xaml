@@ -1,0 +1,27 @@
+﻿<Window x:Class="FinalProjectTemplate2.Additional_Features"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProjectTemplate2"
+        mc:Ignorable="d"
+        Title="Additional_Features" Height="442.291" Width="698.822">
+    <Grid>
+        <Rectangle x:Name="recAddNewFeatures" HorizontalAlignment="Left" Height="144" Margin="350,243,0,0" Stroke="Black" VerticalAlignment="Top" Width="294"/>
+        <Rectangle x:Name="recChangeOrDelete" HorizontalAlignment="Left" Height="144" Margin="50,243,0,0" Stroke="Black" VerticalAlignment="Top" Width="258"/>
+        <Label x:Name="lblFeatureType" Content="Feature Type:" HorizontalAlignment="Left" Margin="64,284,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbbFeatureType" HorizontalAlignment="Left" Margin="147,289,0,0" VerticalAlignment="Top" Width="147" TabIndex="1" >
+
+        </ComboBox>
+        <Label x:Name="lblNewAFName" Content="New Feature Name:" HorizontalAlignment="Left" Margin="364,281,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNewAFName" HorizontalAlignment="Left" Height="23" Margin="511,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TabIndex="5" />
+        <Label x:Name="lblChangeOrDeleteAF" Content=" Delete" HorizontalAlignment="Left" Margin="64,230,0,0" VerticalAlignment="Top" Background="White"/>
+        <Label x:Name="lblAddNewDiscountAF" Content="Add New Features" HorizontalAlignment="Left" Margin="371,230,0,0" VerticalAlignment="Top" Background="White"/>
+        <Label x:Name="lblAdditionalFeaturesInfo" Content="Additional Features" HorizontalAlignment="Left" Margin="257,20,0,0" VerticalAlignment="Top" Foreground="#FF85B014" FontSize="20"/>
+        <TextBlock x:Name="txbFeatureInstruction" HorizontalAlignment="Left" Margin="350,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="126" Width="294"><Run Text="Instruction:"/><LineBreak/><Run Text="1. Additional features that are currently offered are shown on the left."/><LineBreak/><Run Text="2. "/><Run Text="Delete "/><Run Text="the additional features by selecting the feature type and clicking"/><Run Text=" "/><Run Text="&quot;Delete&quot;."/><LineBreak/><Run Text="3. Add new feature type by entering the new feature name and clicking &quot;Add&quot;."/></TextBlock>
+        <Button x:Name="btnDeleteAF" Content="Delete" HorizontalAlignment="Left" Margin="135,355,0,0" VerticalAlignment="Top" Width="75" TabIndex="4" Click="btnDeleteAF_Click"/>
+        <Button x:Name="btnAddNewFeature" Content="Add" HorizontalAlignment="Left" Margin="459,355,0,0" VerticalAlignment="Top" Width="75" TabIndex="7" Click="btnAddNewFeature_Click"/>
+        <DataGrid x:Name="dtgAFInfo" HorizontalAlignment="Left" Height="126" Margin="50,79,0,0" VerticalAlignment="Top" Width="258"/>
+
+    </Grid>
+</Window>
