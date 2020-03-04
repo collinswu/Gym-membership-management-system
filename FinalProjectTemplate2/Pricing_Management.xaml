@@ -1,0 +1,35 @@
+﻿<Window x:Class="FinalProjectTemplate2.Pricing_Management"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProjectTemplate2"
+        mc:Ignorable="d"
+        Title="Pricing Management" Height="459.196" Width="801.416">
+    <Grid>
+        <Label x:Name="labPricing" Content="Pricing Management" HorizontalAlignment="Left" Margin="284,10,0,0" VerticalAlignment="Top" BorderBrush="#FFCF2424" Foreground="#FF85B014" FontSize="20"/>
+        <Label x:Name="labPMMemberType" Content="Select Membership Type:" HorizontalAlignment="Left" Margin="24,69,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbbPMMemberType" HorizontalAlignment="Left" Margin="185,73,0,0" VerticalAlignment="Top" Width="145" TabIndex="1" >
+            <ListBoxItem Content="Individual 3 Months"/>
+            <ListBoxItem Content="Individual 12 Months"/>
+            <ListBoxItem Content="Two Person 3 Months"/>
+            <ListBoxItem Content="Two Person 12 Months"/>
+            <ListBoxItem Content="Family 3 Months"/>
+            <ListBoxItem Content="Family 12 Months"/>
+        </ComboBox>
+        <Label x:Name="labPMCurrentPrice" Content="Current Price:" HorizontalAlignment="Left" Margin="24,111,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labPMAvailability" Content="Availability:" HorizontalAlignment="Left" Margin="24,156,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPMCurrentPrice" HorizontalAlignment="Left" Height="23" Margin="185,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" TabIndex="2"/>
+        <Label x:Name="labPMSummary" Content="Summary:" HorizontalAlignment="Left" Margin="24,240,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnPMChange" Content="Change" HorizontalAlignment="Left" Margin="185,205,0,0" VerticalAlignment="Top" Width="75" TabIndex="4" Click="btnPMChange_Click"/>
+        <Label x:Name="labPMInstruction" Content="Instruction:&#xD;&#xA;&#xD;&#xA;1. The pricing and availability  of current membership type are summarized &#xD;&#xA;in the list; &#xD;&#xA;2. To change pricing or availability of a certain type of membership type, &#xD;&#xA;please select the membership type, enter the new price or the new &#xD;&#xA;availability, and press the &quot;Change&quot; button to make adjustments." HorizontalAlignment="Left" Margin="361,73,0,0" VerticalAlignment="Top" Height="152" Width="406"/>
+        <ComboBox x:Name="cbbPMAvailability" HorizontalAlignment="Left" Margin="185,160,0,0" VerticalAlignment="Top" Width="145" TabIndex="3">
+            <ComboBoxItem Content="available"/>
+            <ComboBoxItem Content="not available"/>
+        </ComboBox>
+        <Button x:Name="btnPMManageDiscount" Content="Manage Discount" HorizontalAlignment="Left" Margin="592,277,0,0" VerticalAlignment="Top" Width="132" Click="btnManageDiscount_Click" TabIndex="5"/>
+        <Button x:Name="btnPMAdditionalFeatures" Content="Additional Features" HorizontalAlignment="Left" Margin="592,316,0,0" VerticalAlignment="Top" Width="132" Click="btnAdditionalFeatures_Click" TabIndex="6"/>
+        <DataGrid x:Name="dtgPricingInfo" HorizontalAlignment="Left" Height="156" Margin="185,251,0,0" VerticalAlignment="Top" Width="371"/>
+
+    </Grid>
+</Window>
